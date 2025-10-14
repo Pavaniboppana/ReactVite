@@ -1,13 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className='bg-black text-red-500'>
+
+<> 
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/" element={<Home />} />
+
+ 
+  </Routes>
+</BrowserRouter>
+  <div className='bg-black text-red-500'>
     <h1 className='bg- '>Hello world</h1>
       {/* <div>
         <a href="https://vite.dev" target="_blank">
@@ -30,6 +44,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
     </div>
+    </> 
   )
 }
 
